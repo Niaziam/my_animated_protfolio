@@ -14,13 +14,13 @@ import { textVariant } from "../utils/motion";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      className="no-bottom-border"
+      className=""
       contentStyle={{
-        background: "#111d2e",
+        background: "var(--secondary-bg)",
         borderRadius: '30px',
-        color: "#fff",
+        color: "var(--text)",
       }}
-      contentArrowStyle={{ borderRight: "10px solid #ffff" }}
+      contentArrowStyle={{ borderRight: "10px solid var(--white-100)" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -34,7 +34,7 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-white-100 text-[24px] font-bold'>{experience.title}</h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
@@ -61,7 +61,7 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText} text-center text-highlight`}>
           What I have done so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>

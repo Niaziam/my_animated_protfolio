@@ -6,6 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import WorkCard from "../global/WorkCard";
 import '../allStyles/works.css';
+import { Link } from "react-router-dom";
 
 const contents = [
   {
@@ -53,7 +54,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>My work</p>
+        <p className={`${styles.sectionSubText} text-highlight`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 

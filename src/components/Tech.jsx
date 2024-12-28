@@ -103,7 +103,7 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Skills</h2>
+        <h2 className={`${styles.sectionHeadText} text-center text-white-100`}>Skills</h2>
       </motion.div>
 
       <motion.div
@@ -122,7 +122,7 @@ const Tech = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <img src={item.path} alt={item.techName} className="w-[80px]" />
-            <p className="text-sm">{item.techName}</p>
+            <p className="text-sm text-secondary">{item.techName}</p>
           </motion.div>
         ))}
       </motion.div>

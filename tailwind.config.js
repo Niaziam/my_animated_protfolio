@@ -13,6 +13,9 @@ export default {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
+        "highlight": "#ff5c8a",
+        "text": "#e4e4f0",
+        "secondary-text": "#b3b7c1",
       },
       fontFamily: {
         sans_M_plus: ['M PLUS 1p', 'sans-serif'],
@@ -32,4 +35,3 @@ export default {
 
   ],
 }
-

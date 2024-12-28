@@ -71,7 +71,7 @@ const Works = () => {
       </div>
 
       <motion.div
-        className="container"
+        className="flex flex-wrap justify-center items-center gap-10 mt-20"
         ref={ref}
         variants={containerVariants}
         initial="hidden"

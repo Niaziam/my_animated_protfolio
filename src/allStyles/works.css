@@ -1,0 +1,56 @@
+.container {
+	@apply py-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-20;
+	line-height: 1.5rem;
+}
+
+
+.item {
+    @apply min-h-[400px] w-[330px] rounded-[20px] py-2 px-4 relative cursor-pointer col-span-1;
+    box-shadow: #3c40434d 0 1px 2px 0, #3c404326 0 1px 3px 1px;
+    background: linear-gradient(110deg, #3c2e59, #584880);
+}
+
+.item::after {
+    @apply absolute top-[20px] left-[0] z-[2] h-[80%];
+    content: "";
+    border-style: solid;
+    border-color: transparent transparent transparent #564880;
+    border-width: 40px 40px 40px 50px;
+    filter: drop-shadow(5px 0 4px #00000094);
+}
+
+
+.layer {
+	background-color: rgb(209, 209, 209);
+	border: 1px solid white;
+	border-radius: inherit;
+	box-shadow:
+		#00000012 0px 1px 2px,
+		#00000012 0px 2px 4px,
+		#00000012 0px 4px 8px,
+		#00000012 0px 8px 16px,
+		#00000012 0px 16px 32px,
+		#00000012 0px 32px 64px;
+	transition: left .2s;
+	@apply p-[10px] left-[10px] relative h-[350px];
+}
+
+.heading3 {
+	@apply text-2xl text-center font-bold text-purple-800 border-b-2 border-purple-800;
+}
+
+.heading4 {
+	@apply pt-[10px] text-[14px] text-center text-white;
+}
+
+.para {
+	@apply text-[#414141] text-center text-[18px] mt-5;
+}
+
+.item:hover::after {
+	filter: drop-shadow(5px 0 4px #0000001a);
+}
+
+.item:hover .layer {
+	left: 50px;
+}

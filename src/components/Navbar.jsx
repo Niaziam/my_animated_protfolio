@@ -74,7 +74,7 @@ const Navbar = () => {
             height='4'
             stroke='var(--black-100)'
             strokeWidth='100'
-            className='bg-white-100 rounded-full'
+            className='bg-white rounded-full'
             initial="hidden"
             animate="visible"
             variants={circleVariants(0)}
@@ -90,7 +90,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white-100" : "text-secondary"} hover:text-white-100 text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-highlight" : "text-secondary-text hover:text-white-100"} text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>

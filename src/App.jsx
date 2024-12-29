@@ -5,7 +5,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works } from
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='bg-primary relative overflow-y-hidden'>
+      <div className='bg-dark relative overflow-y-hidden'>
         <Navbar />
         <Hero />
         <About />
@@ -14,8 +14,7 @@ const App = () => {
         <Works />
         <Feedbacks />
         <div className=''>
-          {/* <Contact /> */}
-          {/* <StarsCanvas /> */}
+          <Contact />
         </div>
       </div>
     </BrowserRouter>

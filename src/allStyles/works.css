@@ -1,11 +1,9 @@
 :root {
-  --primary-bg: #24263b;
-  --secondary-bg: #121317;
-  --accent1: #3a3f58;
-  --accent2: #5973a8;
-  --highlight: #ff5c8a;
-  --text: #e4e4f0;
-  --secondary-text: #313235;
+  --primary: #0F3460;
+  --dark: #1A1A2E;
+  --navy: #16213E;
+  --light: #F9F9F9;
+  --accent: #E94560;
 }
 
 .container {
@@ -16,21 +14,20 @@
 .item {
   @apply min-h-[400px] w-[330px] rounded-[20px] py-2 px-4 relative cursor-pointer col-span-1;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.3);
-  background: linear-gradient(110deg, #580023 ,#ba3b66);
+  background: linear-gradient(110deg, #16213E, #0F3460);
 }
 
 .item::after {
   @apply absolute top-[20px] left-[0] z-[2] h-[80%];
   content: "";
   border-style: solid;
-  border-color: transparent transparent transparent #ba3b66;
+  border-color: transparent transparent transparent #0F3460;
   border-width: 40px 40px 40px 50px;
   filter: drop-shadow(5px 0 4px #00000094);
 }
 
 .layer {
   background-color: #ffffff;
-  border: 1px solid var(--text);
   border-radius: inherit;
   box-shadow:
     #00000012 0px 1px 2px,
@@ -40,18 +37,18 @@
     #00000012 0px 16px 32px,
     #00000012 0px 32px 64px;
   transition: left .2s;
-  @apply p-[10px] left-[10px] relative h-[350px];
+  @apply p-[10px] left-[5px] relative h-[350px];
 }
 
 .heading3 {
   @apply text-2xl text-center font-bold;
-  color: var(--accent1);
-  border-bottom: 2px solid var(--accent1);
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 .para {
   @apply text-center text-[18px] mt-5;
-  color: var(--secondary-text);
+  color: var(--primary);
 }
 
 .item:hover::after {
@@ -63,5 +60,5 @@
 }
 
 .text-highlight {
-  color: var(--highlight);
+  color: var(--accent);
 }

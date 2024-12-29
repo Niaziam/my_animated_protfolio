@@ -6,16 +6,23 @@ export default {
   ],
   theme: {
     extend: {
+      // colors: {
+      //   primary: "#1A1A2E",
+      //   secondary: "#16213E", 
+      //   tertiary: "#0F3460",
+      //   highlight: "#E94560",
+      //   "white-100": "#F9F9F9",
+      //   "black-100": "#100d25",
+      //   "black-200": "#090325",
+      //   "text": "#e4e4f0",
+      //   "secondary-text": "#b3b7c1",
+      // },
       colors: {
-        primary: "#24263b",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
-        "highlight": "#ff5c8a",
-        "text": "#e4e4f0",
-        "secondary-text": "#b3b7c1",
+        primary: "#0F3460", // Primary for buttons, links, etc.
+        dark: "#1A1A2E", // Main background
+        navy: "#16213E", // Secondary dark background
+        light: "#F9F9F9", // Light text or accent
+        accent: "#E94560", // Red for headings or attention-grabbing elements
       },
       fontFamily: {
         sans_M_plus: ['M PLUS 1p', 'sans-serif'],
@@ -35,3 +42,4 @@ export default {
 
   ],
 }
+  

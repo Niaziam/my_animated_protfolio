@@ -33,23 +33,23 @@ const buttonVariants = {
 const Hero = () => {
   return (
     <section className="relative w-full h-[900px] md:h-screen mx-auto overflow-hidden">
-      <div className="absolute max-w-7xl top-[150px] md:top-[200px] left-0 right-0 px-6 xl:m-auto flex flex-col lg:flex-row items-center justify-between mx-6 md:mx-16 z-10">
+      <div className="absolute max-w-7xl top-[150px] md:top-[200px] left-0 right-0 px-6 xl:m-auto flex flex-col-reverse lg:flex-row items-center justify-between mx-6 md:mx-16 z-10 gap-10">
         <motion.div
           className="flex items-start gap-5"
           initial="hidden"
           animate="visible"
           variants={buttonVariants}
         >
-          <div className="flex flex-col justify-center items-center mt-5">
-            <div className="w-5 h-5 rounded-full bg-red-500" />
-            <div className="w-1 h-52 lg:h-80 xl:h-52 bg-gradient-to-b to-primary from-highlight" />
+          <div className="md:flex flex-col justify-center items-center mt-5 hidden">
+            <div className="w-5 h-5 rounded-full bg-accent" />
+            <div className="w-1 h-52 lg:h-80 xl:h-52 bg-gradient-to-b to-dark from-accent" />
           </div>
 
           <div className="space-y-5">
-            <h1 className={`${styles.heroHeadText} text-white-100`}>
-              Hello, my name is <span className="font-cursive text-highlight"> Md. Niaz Uddin</span>
+            <h1 className={`font-bold lg:font-extrabold text-4xl lg:text-5xl mt-3 lg:mt-5 text-white-100`}>
+              Hello, my name is <br className="inline-block md:hidden" /> <span className="font-cursive text-highlight"> Md. Niaz Uddin</span>
             </h1>
-            <h1 className={`${styles.heroSubText} mt-2 text-white-100`}>
+            <h1 className={`text-xl lg:text-3xl mt-2 text-light`}>
               I'm a{' '}
               <ReactTyped
                 className="text-highlight"
@@ -61,7 +61,7 @@ const Hero = () => {
                 typeSpeed={70}
                 backSpeed={30}
                 loop
-                cursorChar="/"
+                cursorChar="|"
               />
             </h1>
           </div>
@@ -69,13 +69,13 @@ const Hero = () => {
 
         <motion.div>
           <motion.div
-            className="w-[400px] h-[400px] rounded-full flex justify-center items-center shadow-neumorphic-inset m-auto bg-primary"
+            className="w-[400px] h-[400px] rounded-full flex justify-center items-center shadow-neumorphic-inset m-auto bg-dark"
             initial="hidden"
             animate="visible"
             variants={circleVariants(0)}
           >
             <motion.div
-              className="w-[360px] h-[360px] rounded-full flex justify-center items-center shadow-neumorphic p-4 bg-primary"
+              className="w-[360px] h-[360px] rounded-full flex justify-center items-center shadow-neumorphic p-4 bg-dark"
               initial="hidden"
               animate="visible"
               variants={circleVariants(0.1)}

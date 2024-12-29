@@ -122,7 +122,7 @@ const Tech = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <img src={item.path} alt={item.techName} className="w-[80px]" />
-            <p className="text-sm text-secondary">{item.techName}</p>
+            <p className="text-sm text-secondary-text">{item.techName}</p>
           </motion.div>
         ))}
       </motion.div>

@@ -6,20 +6,22 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import WorkCard from "../global/WorkCard";
 import '../allStyles/works.css';
-import { Link } from "react-router-dom";
 
 const contents = [
   {
     title: 'Web Development',
     about: 'Dynamic, responsive websites showcasing modern web technologies.',
+    path: 'web_development_projects'
   },
   {
     title: 'Web Design',
     about: 'Creative, visually appealing designs with intuitive interfaces.',
+    path: 'web_design_projects'
   },
   {
     title: 'Graphics Design',
     about: 'Professional designs from branding to marketing materials.',
+    path: 'graphics_design_projects'
   },
 ];
 
@@ -80,7 +82,7 @@ const Works = () => {
       >
         {contents.map((item, key) => (
           <motion.div key={key} variants={itemVariants}>
-            <WorkCard title={item.title} about={item.about} />
+            <WorkCard title={item.title} about={item.about} path={item.path} />
           </motion.div>
         ))}
       </motion.div>

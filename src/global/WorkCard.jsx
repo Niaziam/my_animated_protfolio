@@ -1,11 +1,16 @@
 import React from 'react';
 import '../allStyles/works.css';
+import { Link } from 'react-router-dom';
+
 
 const WorldCard = (props) => {
   return (
     <>
       <div className="item">
-        <div className="layer flex flex-col justify-around select-none">
+        <Link
+          className="layer flex flex-col justify-around select-none z-[2]"
+          to={props.path}
+        >
           <div>
             <h3 className="heading3">{props.title}</h3>
             <p className="para">{props.about}</p>
@@ -15,7 +20,11 @@ const WorldCard = (props) => {
             <i className="fas fa-arrow-right text-highlight"></i>
           </div>
           <p className="absolute text-highlight font-cursive font-extrabold right-3 bottom-3">Niazium</p>
-        </div>
+        </Link>
+        <div className='static_page left-[14px] top-[25px] z-0' />
+        <div className='static_page left-[11px] top-[23px] z-0' />
+        <div className='static_page left-[8px] top-[21px] z-0' />
+        <div className='static_page left-[6px] top-[19px] z-0' />
       </div>
     </>
   );

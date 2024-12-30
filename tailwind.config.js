@@ -6,17 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      // colors: {
-      //   primary: "#1A1A2E",
-      //   secondary: "#16213E", 
-      //   tertiary: "#0F3460",
-      //   highlight: "#E94560",
-      //   "white-100": "#F9F9F9",
-      //   "black-100": "#100d25",
-      //   "black-200": "#090325",
-      //   "text": "#e4e4f0",
-      //   "secondary-text": "#b3b7c1",
-      // },
       colors: {
         primary: "#0F3460", // Primary for buttons, links, etc.
         dark: "#1A1A2E", // Main background

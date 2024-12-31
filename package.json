@@ -20,7 +20,8 @@
     "react-router-dom": "^7.0.2",
     "react-tilt": "^1.0.2",
     "react-typed": "^2.0.12",
-    "react-vertical-timeline-component": "^3.5.3"
+    "react-vertical-timeline-component": "^3.5.3",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

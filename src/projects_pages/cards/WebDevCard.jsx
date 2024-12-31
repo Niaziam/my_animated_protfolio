@@ -27,7 +27,7 @@ const WebDevCard = ({ hidden, image, title, about, liveLink, github, techList, p
       >
         <div className='w-full lg:w-[50%] flex flex-col justify-between'>
           <div className='flex flex-col gap-5'>
-            <div className='overflow-hidden h-[300px] w-full'>
+            <div className='overflow-hidden h-[200px] lg:h-[300px] w-full'>
               <img
                 src={image[currentImageIndex].img}
                 alt={title}
@@ -48,7 +48,7 @@ const WebDevCard = ({ hidden, image, title, about, liveLink, github, techList, p
             </div>
           </div>
 
-          <div>
+          <div className='hidden lg:flex'>
             <Link
               to='/'
               className="bg-primary text-accent font-semibold text-xl px-4 py-2 rounded-xl border-2 border-[#ffffff5a] hover:border-accent"
@@ -80,7 +80,16 @@ const WebDevCard = ({ hidden, image, title, about, liveLink, github, techList, p
           </div>
 
 
-          <div className='flex items-center justify-end'>
+          <div className='flex items-center justify-between lg:justify-end mt-5 lg:mt-0'>
+            <div className='flex lg:hidden'>
+              <Link
+                to='/'
+                className="bg-primary text-accent font-semibold text-xl px-4 py-2 rounded-xl border-2 border-[#ffffff5a] hover:border-accent"
+              >
+                Go Back
+              </Link>
+            </div>
+
             <div className='flex items-center justify-between gap-5'>
               <a href={github}
                 className={`${hidden}`}
@@ -99,9 +108,9 @@ const WebDevCard = ({ hidden, image, title, about, liveLink, github, techList, p
       </motion.div>
 
       <Modal open={open} onClose={() => setOpen(false)} className=''>
-        <div className="p-10 flex flex-col gap-5">
+        <div className="py-10 lg:p-10 flex flex-col gap-5">
 
-          <div onClick={() => setOpen(true)} className='flex justify-center items-center rounded-xl cursor-pointer w-full h-[480px] overflow-hidden'>
+          <div onClick={() => setOpen(true)} className='flex justify-center items-center rounded-xl cursor-pointer w-full h-[200px] lg:h-[480px] overflow-hidden'>
             <img
               src={image[currentImageIndex].img}
               alt={title}

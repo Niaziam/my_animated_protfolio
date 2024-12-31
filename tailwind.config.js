@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0F3460", // Primary for buttons, links, etc.
-        dark: "#1A1A2E", // Main background
-        navy: "#16213E", // Secondary dark background
-        light: "#F9F9F9", // Light text or accent
-        accent: "#E94560", // Red for headings or attention-grabbing elements
+        primary: "#0F3460",
+        dark: "#1A1A2E",
+        navy: "#16213E",
+        light: "#F9F9F9", 
+        accent: "#E94560",
       },
       fontFamily: {
         sans_M_plus: ['M PLUS 1p', 'sans-serif'],

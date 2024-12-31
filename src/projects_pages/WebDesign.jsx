@@ -9,7 +9,13 @@ import WebDevCard from "./cards/WebDevCard";
 const content = [
 	{
 		index: '1',
-		image: '/projectImage/WebDev/myWeb.jpg',
+		image: [
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+			{ img: 'https://swiperjs.com/demos/images/nature-1.jpg' },
+			{ img: 'https://swiperjs.com/demos/images/nature-2.jpg' },
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+		],
 		header: 'My Portfolio',
 		about: 'Discover my journey as a developer through a collection of projects that showcase my creativity, problem-solving skills, and passion for technology.',
 		liveLink: 'https://example.com',
@@ -23,43 +29,15 @@ const content = [
 	},
 	{
 		index: '2',
-		image: '/projectImage/WebDev/myWeb.jpg',
+		image: [
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+			{ img: '/projectImage/WebDev/myWeb.jpg' },
+		],
 		header: 'E-Commerce App',
 		about: 'A fully responsive e-commerce platform built to deliver a seamless shopping experience with modern UI/UX design.',
-		liveLink: 'https://example.com',
-		github: 'https://github.com',
-		techList: [
-			{ techImage: '/tech/ai.png' },
-			{ techImage: '/tech/boot.png' },
-			{ techImage: '/tech/figma.png' },
-			{ techImage: '/tech/css.png' },
-			{ techImage: '/tech/github.png' },
-			{ techImage: '/tech/react.png' },
-			{ techImage: '/tech/ps.png' },
-		]
-	},
-	{
-		index: '3',
-		image: '/projectImage/WebDev/myWeb.jpg',
-		header: 'Blogging Platform',
-		about: 'A feature-packed blogging platform that allows users to create, edit, and manage blog posts with rich-text formatting.',
-		liveLink: 'https://example.com',
-		github: 'https://github.com',
-		techList: [
-			{ techImage: '/tech/ai.png' },
-			{ techImage: '/tech/boot.png' },
-			{ techImage: '/tech/figma.png' },
-			{ techImage: '/tech/css.png' },
-			{ techImage: '/tech/github.png' },
-			{ techImage: '/tech/react.png' },
-			{ techImage: '/tech/ps.png' },
-		]
-	},
-	{
-		index: '4',
-		image: '/projectImage/WebDev/myWeb.jpg',
-		header: 'Weather App',
-		about: 'A weather application that provides accurate and real-time weather updates based on your location.',
 		liveLink: 'https://example.com',
 		github: 'https://github.com',
 		techList: [
@@ -113,7 +91,7 @@ const WebDesign = () => {
 				</div>
 			</motion.div>
 
-			<div className="mt-60 mb-44 relative flex flex-col gap-72">
+			<div className="mt-52 mb-44 relative flex flex-col gap-72">
 				{
 					content.map(
 						(item, key) => (

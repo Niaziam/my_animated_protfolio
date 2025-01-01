@@ -47,11 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary-text text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm MD. Niaz Uddin, a web developer and designer with a passion for creating clean, efficient, and user-friendly applications. I'm skilled in frontend development and enjoy solving problems, whether it's fixing bugs or improving functionality. I'm also a strong team player with leadership experience, always eager to take on new challenges and learn along the way. My goal is to keep growing in this field and deliver high-quality, practical solutions that exceed client expectations.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap justify-center gap-10'>

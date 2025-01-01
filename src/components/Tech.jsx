@@ -9,67 +9,67 @@ import '../allStyles/works.css';
 
 const tech = [
   {
-    path: 'tech/html.png',
+    path: '/tech/html.png',
     techName: 'HTML'
   },
   {
-    path: 'tech/css.png',
+    path: '/tech/css.png',
     techName: 'CSS'
   },
   {
-    path: 'tech/scss.png',
+    path: '/tech/scss.png',
     techName: 'SCSS'
   },
   {
-    path: 'tech/javascript.png',
+    path: '/tech/javascript.png',
     techName: 'JavaScript'
   },
   {
-    path: 'tech/typescript.png',
+    path: '/tech/typescript.png',
     techName: 'TypeScript'
   },
   {
-    path: 'tech/boot.png',
+    path: '/tech/boot.png',
     techName: 'Bootstrap'
   },
   {
-    path: 'tech/tailwind.png',
+    path: '/tech/tailwind.png',
     techName: 'Tailwind CSS'
   },
   {
-    path: 'tech/reactjs.png',
+    path: '/tech/reactjs.png',
     techName: 'React'
   },
   {
-    path: 'tech/nextjs.png',
+    path: '/tech/nextjs.png',
     techName: 'Next JS'
   },
   {
-    path: 'tech/material.png',
+    path: '/tech/material.png',
     techName: 'Material UI'
   },
   {
-    path: 'tech/Chakra_UI.png',
+    path: '/tech/Chakra_UI.png',
     techName: 'Chakra UI'
   },
   {
-    path: 'tech/git.png',
+    path: '/tech/git.png',
     techName: 'Git'
   },
   {
-    path: 'tech/github.png',
+    path: '/tech/github.png',
     techName: 'Github'
   },
   {
-    path: 'tech/figma.png',
+    path: '/tech/figma.png',
     techName: 'Figma'
   },
   {
-    path: 'tech/ps.png',
+    path: '/tech/ps.png',
     techName: 'Photoshop'
   },
   {
-    path: 'tech/ai.png',
+    path: '/tech/ai.png',
     techName: 'Illustrator'
   },
 ]

@@ -17,13 +17,11 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
+    const { name, value } = e.target;
+    setForm((prevForm) => ({
+      ...prevForm,
       [name]: value,
-    });
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -32,16 +30,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_559rc0p',
+        'template_u0tmu7r',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Niaz Uddin",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "niazium20@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'ZMmwfZa5rYvbdKP6a'
       )
       .then(
         () => {

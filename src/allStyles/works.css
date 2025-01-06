@@ -38,7 +38,7 @@
     #00000012 0px 16px 32px,
     #00000012 0px 32px 64px;
   transition: left .2s;
-  @apply p-[10px] -left-[8px] top-2 relative h-[350px];
+  @apply p-[10px] -left-[4px] top-2 relative h-[350px];
 }
 
 .static_page{

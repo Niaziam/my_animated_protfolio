@@ -21,10 +21,8 @@ const WorldCard = (props) => {
           </div>
           <p className="absolute text-highlight font-cursive font-extrabold right-3 bottom-3">Niazium</p>
         </Link>
-        <div className='static_page left-[14px] top-[25px] z-0' />
-        <div className='static_page left-[11px] top-[23px] z-0' />
-        <div className='static_page left-[8px] top-[21px] z-0' />
-        <div className='static_page left-[6px] top-[19px] z-0' />
+        <div className='static_page left-[12px] top-[21px] z-0' />
+        <div className='static_page left-[9px] top-[19px] z-0' />
       </div>
     </>
   );

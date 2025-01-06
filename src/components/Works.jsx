@@ -18,11 +18,6 @@ const contents = [
     about: 'Creative, visually appealing designs with intuitive interfaces.',
     path: 'web_design_projects'
   },
-  {
-    title: 'Graphics Design',
-    about: 'Professional designs from branding to marketing materials.',
-    path: 'graphics_design_projects'
-  },
 ];
 
 

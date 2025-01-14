@@ -67,9 +67,10 @@ const Hero = () => {
             </h1>
             <a
               href="#contact"
-              className="bg-accent px-5 py-2 rounded-lg text-lg font-semibold relative top-5"
+              className="hover:bg-accent border-2 border-accent px-5 py-2 rounded-3xl text-lg font-semibold relative top-5"
             >
               Hire me
+              <i className="fas fa-arrow-right ml-3 text-sm"></i>
             </a>
           </div>
         </motion.div>

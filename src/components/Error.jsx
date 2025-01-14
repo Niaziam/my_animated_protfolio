@@ -84,8 +84,7 @@ const ErrorPage = () => {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-      >
-      </motion.div>
+      ></motion.div>
     </div>
   );
 };

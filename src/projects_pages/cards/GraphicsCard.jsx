@@ -1,18 +1,28 @@
-import { motion, useTransform, useScroll } from 'framer-motion';
-import React, { useRef } from 'react';
+import { motion, useTransform, useScroll } from "framer-motion";
+import React, { useRef } from "react";
 
-const GraphicsCard = ({ hidden, image, title, about, liveLink, github, techList, progress, range, targetScale }) => {
-	const container = useRef(null);
-	const scale = useTransform(progress, range, [1, targetScale]);
+const GraphicsCard = ({
+  hidden,
+  image,
+  title,
+  about,
+  liveLink,
+  github,
+  techList,
+  progress,
+  range,
+  targetScale,
+}) => {
+  const container = useRef(null);
+  const scale = useTransform(progress, range, [1, targetScale]);
 
-
-	return (
-		<motion.div
-			ref={container}
-			className='w-full bg-[#0a0a42] p-5 rounded-3xl border-2 border-[#ffffff5a] sticky lg:top-20 top-6 lg:h-[500px] h-[700px] space-y-5'
-			style={{ scale }}
-		>
-			{/* <div className='w-full lg:w-[50%] flex flex-col gap-3'>
+  return (
+    <motion.div
+      ref={container}
+      className="w-full bg-[#0a0a42] p-5 rounded-3xl border-2 border-[#ffffff5a] sticky lg:top-20 top-6 lg:h-[500px] h-[700px] space-y-5"
+      style={{ scale }}
+    >
+      {/* <div className='w-full lg:w-[50%] flex flex-col gap-3'>
         <div>
           <img
             src={image}
@@ -61,27 +71,29 @@ const GraphicsCard = ({ hidden, image, title, about, liveLink, github, techList,
           </a>
         </div>
       </div> */}
-			<div className=' grid grid-cols-12'>
-				<div className='col-span-1 flex justify-center items-center p-3 rounded-l-xl bg-primary border-2 border-[#ffffff74]'>
-					<i className="fas fa-arrow-left"></i>
-				</div>
-				<div className='col-span-10 flex justify-center items-center p-3 border-y-2 border-[#ffffff20]'>
-					<img 
-					src={image} 
-					alt={title} 
-					className='w-[600px] border-2 border-[#ffffff74] rounded-lg'
-					/>
-				</div>
-				<div className='col-span-1 flex justify-center items-center p-3 rounded-r-xl bg-primary border-2 border-[#ffffff74]'>
-					<i className="fas fa-arrow-right"></i>
-				</div>
-			</div>
-			<div className='space-y-3'>
-				<h1 className='text-xl lg:text-4xl font-semibold'>{title}</h1>
-				<p className='text-secondary-text text-md lg:text-[18px] max-w-3xl leading-[30px]'>{about}</p>
-			</div>
-		</motion.div>
-	);
+      <div className=" grid grid-cols-12">
+        <div className="col-span-1 flex justify-center items-center p-3 rounded-l-xl bg-primary border-2 border-[#ffffff74]">
+          <i className="fas fa-arrow-left"></i>
+        </div>
+        <div className="col-span-10 flex justify-center items-center p-3 border-y-2 border-[#ffffff20]">
+          <img
+            src={image}
+            alt={title}
+            className="w-[600px] border-2 border-[#ffffff74] rounded-lg"
+          />
+        </div>
+        <div className="col-span-1 flex justify-center items-center p-3 rounded-r-xl bg-primary border-2 border-[#ffffff74]">
+          <i className="fas fa-arrow-right"></i>
+        </div>
+      </div>
+      <div className="space-y-3">
+        <h1 className="text-xl lg:text-4xl font-semibold">{title}</h1>
+        <p className="text-secondary-text text-md lg:text-[18px] max-w-3xl leading-[30px]">
+          {about}
+        </p>
+      </div>
+    </motion.div>
+  );
 };
 
 export default GraphicsCard;

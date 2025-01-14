@@ -7,6 +7,4 @@ import Navbar from "./Navbar";
 import Tech from "./Tech";
 import Works from "./Works";
 
-export {
-	About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works
-};
+export { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works };

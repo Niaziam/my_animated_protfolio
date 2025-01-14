@@ -5,74 +5,74 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import WorkCard from "../global/WorkCard";
-import '../allStyles/works.css';
+import "../allStyles/works.css";
 
 const tech = [
   {
-    path: '/tech/html.png',
-    techName: 'HTML'
+    path: "/tech/html.png",
+    techName: "HTML",
   },
   {
-    path: '/tech/css.png',
-    techName: 'CSS'
+    path: "/tech/css.png",
+    techName: "CSS",
   },
   {
-    path: '/tech/scss.png',
-    techName: 'SCSS'
+    path: "/tech/scss.png",
+    techName: "SCSS",
   },
   {
-    path: '/tech/javascript.png',
-    techName: 'JavaScript'
+    path: "/tech/javascript.png",
+    techName: "JavaScript",
   },
   {
-    path: '/tech/typescript.png',
-    techName: 'TypeScript'
+    path: "/tech/typescript.png",
+    techName: "TypeScript",
   },
   {
-    path: '/tech/boot.png',
-    techName: 'Bootstrap'
+    path: "/tech/boot.png",
+    techName: "Bootstrap",
   },
   {
-    path: '/tech/tailwind.png',
-    techName: 'Tailwind CSS'
+    path: "/tech/tailwind.png",
+    techName: "Tailwind CSS",
   },
   {
-    path: '/tech/reactjs.png',
-    techName: 'React'
+    path: "/tech/reactjs.png",
+    techName: "React",
   },
   // {
   //   path: '/tech/nextjs.png',
   //   techName: 'Next JS'
   // },
   {
-    path: '/tech/material.png',
-    techName: 'Material UI'
+    path: "/tech/material.png",
+    techName: "Material UI",
   },
   {
-    path: '/tech/Chakra_UI.png',
-    techName: 'Chakra UI'
+    path: "/tech/Chakra_UI.png",
+    techName: "Chakra UI",
   },
   {
-    path: '/tech/git.png',
-    techName: 'Git'
+    path: "/tech/git.png",
+    techName: "Git",
   },
   {
-    path: '/tech/github.png',
-    techName: 'Github'
+    path: "/tech/github.png",
+    techName: "Github",
   },
   {
-    path: '/tech/figma.png',
-    techName: 'Figma'
+    path: "/tech/figma.png",
+    techName: "Figma",
   },
   {
-    path: '/tech/ps.png',
-    techName: 'Photoshop'
+    path: "/tech/ps.png",
+    techName: "Photoshop",
   },
   // {
   //   path: '/tech/ai.png',
   //   techName: 'Illustrator'
   // },
-]
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -103,7 +103,9 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center text-white-100`}>Skills</h2>
+        <h2 className={`${styles.sectionHeadText} text-center text-white-100`}>
+          Skills
+        </h2>
       </motion.div>
 
       <motion.div
@@ -128,6 +130,6 @@ const Tech = () => {
       </motion.div>
     </>
   );
-}
+};
 
 export default SectionWrapper(Tech, "");

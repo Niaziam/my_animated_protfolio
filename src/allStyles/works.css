@@ -1,9 +1,9 @@
 :root {
-  --primary: #0F3460;
-  --dark: #1A1A2E;
-  --navy: #16213E;
-  --light: #F9F9F9;
-  --accent: #E94560;
+  --primary: #0f3460;
+  --dark: #1a1a2e;
+  --navy: #16213e;
+  --light: #f9f9f9;
+  --accent: #e94560;
 }
 
 .container {
@@ -14,14 +14,14 @@
 .item {
   @apply min-h-[400px] w-[330px] rounded-[20px] py-2 px-4 relative cursor-pointer col-span-1;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.3);
-  background: linear-gradient(110deg, #16213E, #0F3460);
+  background: linear-gradient(110deg, #16213e, #0f3460);
 }
 
 .item::after {
   @apply absolute top-[20px] left-[0] z-[2] h-[80%];
   content: "";
   border-style: solid;
-  border-color: transparent transparent transparent #0F3460;
+  border-color: transparent transparent transparent #0f3460;
   border-width: 40px 40px 40px 40px;
   filter: drop-shadow(5px 0 4px #00000094);
 }
@@ -30,18 +30,14 @@
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.553);
-  box-shadow:
-    #00000012 0px 1px 2px,
-    #00000012 0px 2px 4px,
-    #00000012 0px 4px 8px,
-    #00000012 0px 8px 16px,
-    #00000012 0px 16px 32px,
+  box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px,
+    #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px,
     #00000012 0px 32px 64px;
-  transition: left .2s;
+  transition: left 0.2s;
   @apply p-[10px] -left-[4px] top-2 relative h-[350px];
 }
 
-.static_page{
+.static_page {
   border: 1px solid rgba(0, 0, 0, 0.553);
   @apply h-[350px] absolute bg-light w-[305px] rounded-[10px];
 }

@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { ReactTyped } from 'react-typed';
+import { ReactTyped } from "react-typed";
 
 const circleVariants = (delay) => ({
   hidden: { scale: 0 },
@@ -8,26 +8,25 @@ const circleVariants = (delay) => ({
     scale: 1,
     transition: {
       duration: 1,
-      ease: 'easeInOut',
-      delay: delay
-    }
-  }
+      ease: "easeInOut",
+      delay: delay,
+    },
+  },
 });
 
 const buttonVariants = {
   hidden: {
-    opacity: 0, x: -50,
+    opacity: 0,
+    x: -50,
   },
-  visible:
-  {
-    opacity: 1, x: 0,
-    transition:
-    {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
       duration: 1.3,
-      ease: 'easeInOut'
-
-    }
-  }
+      ease: "easeInOut",
+    },
+  },
 };
 
 const Hero = () => {
@@ -45,25 +44,33 @@ const Hero = () => {
             <div className="w-1 h-52 lg:h-80 xl:h-52 bg-gradient-to-b to-dark from-accent" />
           </div>
 
-          <div className="space-y-5">
-            <h1 className={`font-bold lg:font-extrabold text-4xl lg:text-5xl mt-3 lg:mt-5 text-white-100`}>
-              Hello, my name is <br className="inline-block md:hidden" /> <span className="font-cursive text-highlight"> Md. Niaz Uddin</span>
+          <div className="space-y-4">
+            <h1
+              className={`font-bold lg:font-extrabold text-4xl lg:text-5xl mt-3 lg:mt-5 text-white-100`}
+            >
+              Hello, my name is <br className="inline-block md:hidden" />{" "}
+              <span className="font-cursive text-highlight">
+                {" "}
+                Md. Niaz Uddin
+              </span>
             </h1>
-            <h1 className={`text-xl lg:text-3xl mt-2 text-light`}>
-              I'm a{' '}
+            <h1 className={`text-xl lg:text-3xl text-light`}>
+              I'm a{" "}
               <ReactTyped
                 className="text-highlight"
-                strings={[
-                  "Front-end Developer",
-                  "Web Designer",
-                  "Graphics Designer",
-                ]}
+                strings={["Front-end Developer", "Web Designer"]}
                 typeSpeed={70}
                 backSpeed={30}
                 loop
                 cursorChar="|"
               />
             </h1>
+            <a
+              href="#contact"
+              className="bg-accent px-5 py-2 rounded-lg text-lg font-semibold relative top-5"
+            >
+              Hire me
+            </a>
           </div>
         </motion.div>
 

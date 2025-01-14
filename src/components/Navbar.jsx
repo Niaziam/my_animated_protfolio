@@ -16,7 +16,7 @@ const buttonVariants = {
     y: 0,
     transition: {
       duration: 1.3,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
   },
 };
@@ -27,7 +27,7 @@ const circleVariants = (delay) => ({
     scale: 1,
     transition: {
       duration: 1,
-      ease: 'easeInOut',
+      ease: "easeInOut",
       delay: delay,
     },
   },
@@ -58,39 +58,47 @@ const Navbar = () => {
       initial="hidden"
       animate="visible"
       variants={buttonVariants}
-      className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 ${scrolled ? "bg-black-200/10 backdrop-blur-lg" : "bg-transparent"}`}
+      className={`${
+        styles.paddingX
+      } w-full flex items-center py-3 fixed top-0 z-20 ${
+        scrolled ? "bg-black-200/10 backdrop-blur-lg" : "bg-transparent"
+      }`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
           <Logo
-            width='4'
-            height='4'
-            stroke='var(--black-100)'
-            strokeWidth='100'
-            className='bg-white rounded-full'
+            width="4"
+            height="4"
+            stroke="var(--black-100)"
+            strokeWidth="100"
+            className="bg-white rounded-full"
             initial="hidden"
             animate="visible"
             variants={circleVariants(0)}
           />
 
-          <p className='text-white-100 text-[18px] font-bold cursor-pointer flex '>
+          <p className="text-white-100 text-[18px] font-bold cursor-pointer flex ">
             Niaz &nbsp;
-            <span className='sm:block hidden'> | Web Developer</span>
+            <span className="sm:block hidden"> | Web Developer</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-highlight" : "text-secondary-text hover:text-white-100"} text-[18px] font-medium cursor-pointer`}
+              className={`${
+                active === nav.title
+                  ? "text-highlight"
+                  : "text-secondary-text hover:text-white-100"
+              } text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -98,20 +106,26 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
 
-          <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black-100 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+          <div
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 bg-black-100 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          >
+            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4 bg-primary p-5 rounded-lg">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-sans_M_plus font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white-100" : "text-secondary"}`}
+                  className={`font-sans_M_plus font-medium cursor-pointer text-[16px] ${
+                    active === nav.title ? "text-white-100" : "text-secondary"
+                  }`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);

@@ -40,10 +40,10 @@ const tech = [
     path: '/tech/reactjs.png',
     techName: 'React'
   },
-  {
-    path: '/tech/nextjs.png',
-    techName: 'Next JS'
-  },
+  // {
+  //   path: '/tech/nextjs.png',
+  //   techName: 'Next JS'
+  // },
   {
     path: '/tech/material.png',
     techName: 'Material UI'
@@ -68,10 +68,10 @@ const tech = [
     path: '/tech/ps.png',
     techName: 'Photoshop'
   },
-  {
-    path: '/tech/ai.png',
-    techName: 'Illustrator'
-  },
+  // {
+  //   path: '/tech/ai.png',
+  //   techName: 'Illustrator'
+  // },
 ]
 
 const containerVariants = {

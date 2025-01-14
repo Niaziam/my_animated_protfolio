@@ -141,19 +141,19 @@ const experiences = [
   //     "Implementing advanced dynamic routing and middleware for scalable web solutions.",
   //   ],
   // },
-  {
-    title: "Graphics Designer",
-    company_name: "Freelance",
-    icon: "/tech/design.png",
-    iconBg: "orange",
-    date: "Jan 2023 - March 2024",
-    points: [
-      "Crafting high-quality visuals, including logos, banners, and marketing materials.",
-      "Collaborating with clients to develop compelling designs tailored to their needs.",
-      "Producing engaging content for websites, social media, and print materials.",
-      "Ensuring timely delivery of projects while maintaining a strong attention to detail.",
-    ],
-  },
+  // {
+  //   title: "Graphics Designer",
+  //   company_name: "Freelance",
+  //   icon: "/tech/design.png",
+  //   iconBg: "orange",
+  //   date: "Jan 2023 - March 2024",
+  //   points: [
+  //     "Crafting high-quality visuals, including logos, banners, and marketing materials.",
+  //     "Collaborating with clients to develop compelling designs tailored to their needs.",
+  //     "Producing engaging content for websites, social media, and print materials.",
+  //     "Ensuring timely delivery of projects while maintaining a strong attention to detail.",
+  //   ],
+  // },
   {
     title: "Web Designer",
     company_name: "Freelance",
@@ -161,10 +161,10 @@ const experiences = [
     iconBg: "#16213e",
     date: "Jan 2023 - July 2023",
     points: [
-      "Designing clean, modern, and user-centered web layouts to align with client branding.",
-      "Creating prototypes, wireframes, and mockups for approval and development handoff.",
-      "Ensuring consistency across platforms through well-defined design systems.",
-      "Leveraging tools like Figma and Adobe XD to streamline the design process.",
+      "Learning to design simple, clean, and user-friendly web layouts.",
+      "Practicing creating prototypes and mockups to improve design ideas.",
+      "Focusing on consistency across designs for better user experiences.",
+      "Using tools like Figma to explore and streamline the design process.",
     ],
   },
   {
@@ -174,15 +174,13 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "Ongoing",
     points: [
-      "Demonstrating strong leadership and the ability to guide teams toward shared goals.",
-      "Excelling in problem-solving and critical thinking to deliver creative solutions.",
-      "Communicating effectively with clients and teams to foster collaboration and trust.",
-      "Adapting to new challenges and maintaining a proactive approach in fast-paced environments.",
+      "Learning to guide small groups and work together toward shared goals.",
+      "Practicing problem-solving and thinking creatively to find simple solutions.",
+      "Communicating with clients and teammates to keep things clear and build trust.",
+      "Getting better at handling new challenges and staying motivated in busy situations.",
     ],
   },
 ];
-
-
 
 const testimonials = [
   {

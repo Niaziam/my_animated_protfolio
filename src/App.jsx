@@ -1,8 +1,17 @@
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works } from "./components";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+} from "./components";
 
 const App = () => {
   return (
-    <div className='bg-dark relative overflow-y-hidden'>
+    <div className="bg-dark relative overflow-y-hidden">
       <Navbar />
       <Hero />
       <About />
@@ -10,11 +19,11 @@ const App = () => {
       <Tech />
       <Works />
       <Feedbacks />
-      <div className=''>
+      <div className="">
         <Contact />
       </div>
     </div>
   );
-}
+};
 
 export default App;

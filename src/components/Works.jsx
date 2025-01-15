@@ -12,11 +12,11 @@ const contents = [
     about: "Dynamic, responsive websites showcasing modern web technologies.",
     path: "web_development_projects",
   },
-  {
-    title: "Web Design",
-    about: "Creative, visually appealing designs with intuitive interfaces.",
-    path: "web_design_projects",
-  },
+  // {
+  //   title: "Web Design",
+  //   about: "Creative, visually appealing designs with intuitive interfaces.",
+  //   path: "web_design_projects",
+  // },
 ];
 
 const containerVariants = {

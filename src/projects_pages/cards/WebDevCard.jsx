@@ -1,5 +1,5 @@
 import { motion, useTransform } from "framer-motion";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Modal from "./Modal";
 import { Link } from "react-router-dom";
 
@@ -32,6 +32,13 @@ const WebDevCard = ({
       prevIndex === image.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  // Ensure currentImageIndex is within valid range if image array changes
+  useEffect(() => {
+    if (currentImageIndex >= image.length) {
+      setCurrentImageIndex(0);
+    }
+  }, [image]);
 
   return (
     <>

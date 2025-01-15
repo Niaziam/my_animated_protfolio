@@ -1,5 +1,5 @@
 import { motion, useTransform } from "framer-motion";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useCallback } from "react";
 import Modal from "./Modal";
 import { Link } from "react-router-dom";
 
@@ -21,24 +21,23 @@ const WebDevCard = ({
   const [open, setOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const handlePrevImage = () => {
+  const handlePrevImage = useCallback(() => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? image.length - 1 : prevIndex - 1
     );
-  };
+  }, [image.length]);
 
-  const handleNextImage = () => {
+  const handleNextImage = useCallback(() => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === image.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [image.length]);
 
-  // Ensure currentImageIndex is within valid range if image array changes
   useEffect(() => {
     if (currentImageIndex >= image.length) {
       setCurrentImageIndex(0);
     }
-  }, [image]);
+  }, [currentImageIndex, image.length]);
 
   return (
     <>
@@ -107,7 +106,7 @@ const WebDevCard = ({
                   <img
                     key={key}
                     src={itemTwo.techImage}
-                    alt=""
+                    alt={itemTwo.techName} // Use alt text for better accessibility
                     className="w-[40px]"
                   />
                 ))}
